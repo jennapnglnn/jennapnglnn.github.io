@@ -1,0 +1,116 @@
+@font-face{
+    font-family: tommy;
+    src: url(../fonts/MADE-TOMMY-Regular.otf);
+    }
+
+@font-face {
+    font-family: horizon;
+    src: url(../fonts/horizon.otf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #f17896; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ec567b; 
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: tommy;
+    color: #fff;
+    background-image: url(../assets/body-bg.png);
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    transition: background-color 0.5s;
+    padding: 20px 20px;
+    z-index: 999;
+}
+
+.navbar-scroll {
+    background-color: #000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-family: tommy;
+    text-transform: uppercase;
+    transition-duration: 0.5s;
+}
+
+.logo a {
+    font-family: horizon;
+    font-size: 25px;
+}
+
+.navbar a:hover {
+    color: #FF2291;
+}
+
+.logo a:hover {
+    color: #fff;
+}
+
+a:visited, a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    margin-right: 6%;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+}

@@ -1,0 +1,246 @@
+@font-face{
+    font-family: tommy;
+    src: url(../fonts/MADE-TOMMY-Regular.otf);
+    }
+
+@font-face {
+    font-family: horizon;
+    src: url(../fonts/horizon.otf);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.bg-gradient {
+    width: 100%;
+}
+
+.my-name {
+    font-family: horizon;
+    font-size: 60px;
+    letter-spacing: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.my-descrip {
+    font-size: 20px;
+    margin: 0 200px;
+    text-align: justify;
+}
+
+section.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.background-container {
+    position: relative;
+    width: 100%;
+}
+
+.content-container {
+    display: flex;
+    flex: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.left-intro {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-top: 200px;
+    margin-bottom: 95px;
+    margin-right: 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.right-intro {
+    margin-top: 4.3%;
+    margin-right: 2%; 
+}
+
+.my-pic {
+    width: 100%;
+}
+
+/* Styles for button-container */
+.button-container button{
+    margin-top: 20px;
+    font-size:15px;
+    width:140px;
+    height:50px;
+    border-width:2px;
+    color:#ffffff;
+    border-color:#fff;
+    background-color: transparent;
+    transition: background-color 0.5s;
+    font-family: tommy;
+    text-transform: uppercase;
+}
+
+
+.button-container button:hover {
+    background-color: #FF2291;
+  }
+                
+
+.button-container button {
+    margin-right: 50px; 
+}
+
+.title-exp{
+    text-align: center;
+    font-family: horizon;
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: 0 0 30px rgba(255, 34, 145, 0.8); 
+}
+
+/* Features of Exp */
+.feature-exp {
+    margin: 3% 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 15%;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+  }
+
+.column:first-child {
+    flex-basis: 25%;
+  }
+
+.column:nth-child(2),
+.column:nth-child(3) {
+    flex-basis: 37.5%;
+  }
+
+.c2-r1, .c2-r2, .c3-r1, .c3-r2 {
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+.c2-r1, .c2-r2, .c3-r1, .c3-r2 {
+    padding: 30px;
+    margin: 20px;
+}
+
+.column1 {
+    margin: auto 0;
+}
+.column1 h1 {
+    font-size: 100px;
+    margin: -10px 0;
+}
+
+.column1 p {
+    font-size: 20px;
+}
+
+.container h1{
+    color: #FF2291;
+}
+
+.c2-r1 h1, .c2-r2 h1, .c3-r1 h1, .c3-r2 h1 {
+    font-size: 50px;
+    margin: -10px 0;
+}
+
+@media screen and (max-width: 1700px) {
+    section.flex-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .left-intro {
+        margin: 100px 0 10px 0;
+        display: flex;
+        flex:1;
+        position:relative;
+    }
+
+    .bg-gradient {
+        width: 300%;
+    }
+
+    .my-name {
+        font-size: 40px;
+    }
+
+    .my-descrip {
+        font-size: 15px;
+    }
+
+    .content-container {
+        flex-direction: column;
+    }
+
+    .right-intro {
+        margin: 0 auto;
+    }
+
+    .my-pic {
+        width: 90%;
+        margin-left:75px;
+    }
+
+    .button-container button {
+        margin: 25px 0;
+        margin-right: 10px; 
+        font-size: 15px;
+        width: 150px; 
+        height: 40px;
+    }
+
+    .feature-exp {
+        margin-top: 100px;
+    }
+
+    .container {
+        margin: 0 10%;
+    }
+
+    .column {
+        flex-basis: 100%; 
+    }
+
+    .column1 {
+        margin: 90px 0;
+    }
+
+    .column1 h1 {
+        font-size: 60px;
+        margin: 0;
+    }
+
+    .column1 p {
+        font-size: 16px;
+    }
+
+    .c2-r1 h1,
+    .c2-r2 h1,
+    .c3-r1 h1,
+    .c3-r2 h1 {
+        font-size: 40px;
+        margin: -10px 0;
+    }
+
+    .column2 p, .c3-r1 p, .c3-r2 p {
+        font-size: 15px;
+    }
+}
