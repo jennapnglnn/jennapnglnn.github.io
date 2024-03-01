@@ -64,6 +64,12 @@ html {
     background-color: #000;
 }
 
+.web-title {
+    display: inline-block;
+    vertical-align: 5px; /* Adjust the value as needed */
+    text-decoration: underline;
+  }
+
 .navbar a {
     color: white;
     text-decoration: none;
@@ -73,10 +79,24 @@ html {
     transition-duration: 0.5s;
 }
 
-.logo a {
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-size {
+    width: 360px;
+    height: 80px;
+    /* margin-left: 20px;
+    margin-right: 10px; */
+}
+
+/* .logo a {
     font-family: horizon;
     font-size: 25px;
-}
+   letter-spacing: 10px; 
+} */
+
 
 .navbar a:hover {
     color: #FF2291;
