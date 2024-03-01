@@ -56,7 +56,7 @@ html {
     align-items: center;
     justify-content: space-between; 
     transition: background-color 0.5s;
-    padding: 20px 20px;
+    padding: 25px 25px;
     z-index: 999;
 }
 
@@ -66,7 +66,7 @@ html {
 
 .web-title {
     display: inline-block;
-    vertical-align: 5px; /* Adjust the value as needed */
+    vertical-align: 5px;
     text-decoration: underline;
   }
 
@@ -85,18 +85,9 @@ html {
 }
 
 .logo-size {
-    width: 360px;
+    width: 80px;
     height: 80px;
-    /* margin-left: 20px;
-    margin-right: 10px; */
 }
-
-/* .logo a {
-    font-family: horizon;
-    font-size: 25px;
-   letter-spacing: 10px; 
-} */
-
 
 .navbar a:hover {
     color: #FF2291;
@@ -123,6 +114,7 @@ a:visited, a:link {
 }
 
 .navbar-links {
+    margin-left: 20px;
     display: flex;
     align-items: center;
 }
