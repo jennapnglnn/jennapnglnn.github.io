@@ -1,0 +1,82 @@
+@font-face{
+    font-family: tommy;
+    src: url(../fonts/MADE-TOMMY-Regular.otf);
+    }
+
+@font-face {
+    font-family: horizon;
+    src: url(../fonts/horizon.otf);
+}
+
+.title-contact {
+    font-family: horizon;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 0 0 30px rgba(255, 34, 145, 0.8); 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90.5vh;
+}
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 800px;
+    /* border: 1px solid #ccc;
+    border-radius: 5px; */
+    padding: 100px;
+    background-color: #131313;
+}   
+.form-container .left-side {
+    flex: 1;
+    text-align: center;
+    margin-right: 50px;
+}
+.form-container .right-side {
+    flex: 1;
+    text-align: center;
+    margin-left: 50px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: tommy;
+    /* margin: 30px 0; */
+}
+textarea {
+    height: 150px;
+}
+input[type="submit"] {
+    color: #fff;
+    border: #fff 2px solid;
+    font-family: tommy;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    background-color: transparent;
+}
+input[type="submit"]:hover {
+    background-color: #FF2291;
+}
+
+.contact-icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+.contact-align {
+    text-align: left;
+    margin-top: 50px;
+}
