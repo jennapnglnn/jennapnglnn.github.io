@@ -116,7 +116,7 @@ section.flex-container {
     border: #fff  solid 2px;
 }
 
-.objective, .skills-title {
+.objective, .skills-title, .exp-title {
     font-family: horizon;
     font-size: 35px;
     text-align: center;
@@ -181,6 +181,28 @@ section.flex-container {
     transition: color 0.5s ease-in-out; /* Smooth color transition */
     text-align: center;
 }
+
+.experience {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    position: relative;
+    justify-content: center;
+}
+
+.image-exp {
+    width: 240px;
+    height: 400px;
+    margin: 60px 50px;
+    transition: 1s;
+}
+
+.image-exp:hover {
+    transform: scale(1.5);
+}
+
+
+
 
 
 @media screen and (max-width: 1700px) {
