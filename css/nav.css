@@ -24,7 +24,6 @@ html {
   }
 }
 
-
 .fade-in-up {
   opacity: 0; 
   transform: translateY(20px); 
@@ -89,12 +88,6 @@ html {
     background-color: #000;
 }
 
-.web-title {
-    display: inline-block;
-    vertical-align: 5px;
-    text-decoration: underline;
-  }
-
 .navbar a {
     color: white;
     text-decoration: none;
@@ -107,6 +100,8 @@ html {
 .logo {
     display: flex;
     align-items: center;
+    position: absolute;
+    top: 10px;
 }
 
 .logo-size {
@@ -127,22 +122,62 @@ a:visited, a:link {
     text-decoration: none;
 }
 
-.navbar-left {
-    display: flex;
-    align-items: center;
-}
-
 .navbar-right {
     display: flex;
     align-items: center;
-    margin-right: 6%;
 }
 
 .navbar-links {
-    margin-left: 20px;
+    margin-left: 90px;
     display: flex;
     align-items: center;
 }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #474747;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 3px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #474747;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar a.dropbtn {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-family: tommy;
+  text-transform: uppercase;
+  transition-duration: 0.5s;
+}
+
+.navbar a.dropbtn:hover {
+  color: #FF2291;
+}
+
+.arrow {
+  margin-left: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.dropdown:hover .arrow {
+  transform: rotate(180deg);
+}
+
 
 footer {
     background-color: #333;
