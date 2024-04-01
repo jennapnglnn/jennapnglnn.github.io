@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/gallery.css">
     <link rel="icon" href="assets/Logo-icon-web.png" type="images/x-icon"/>
     <title>JEPP Portfolio - Home</title>
 </head>
@@ -41,7 +42,7 @@
 
 <section class="feature-exp">
     <h1 class="title-exp">Features of Experience</h1>
-    <div class="container">
+    <div class="container fade-in-up">
         <div class="column column1">
           <h1>6</h1>
           <p>Years of Experience<br>in Graphic Design</p>
@@ -72,12 +73,128 @@
       </div>
 </section>
 
+<hr>
+
+<div class = "body">
+<div class="text-projs">
+  <h1 class="title-projs">Featured Projects</h1>
+</div>
+<div class="app">
+
+    <div class="cardList">
+      <!-- Card List -->
+      <button class="cardList__btn btn btn--left">
+        <div class="icon">
+          <svg>
+            <use xlink:href="#arrow-left"></use>
+          </svg>
+        </div>
+      </button>
+  
+      <div class="cards__wrapper">
+        <!-- Card 1 -->
+        <div class="card current--card">
+          <div class="card__image">
+            <img src="assets/poster-entrep.png" alt="" />
+          </div>
+        </div>
+  
+        <!-- Card 2 -->
+        <div class="card next--card">
+          <div class="card__image">
+            <img src="assets/algebra-infog.png" alt="" />
+          </div>
+        </div>
+  
+        <!-- Card 3 -->
+        <div class="card previous--card">
+          <div class="card__image">
+            <img src="assets/HFA-Poster.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+  
+      <button class="cardList__btn btn btn--right">
+        <div class="icon">
+          <svg>
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </div>
+      </button>
+    </div>
+  
+    <!-- Info List -->
+    <div class="infoList">
+      <div class="info__wrapper">
+        <!-- Info 1 -->
+        <div class="info current--info">
+          <!-- <h1 class="text name">Entrepreneur</h1>
+          <h4 class="text location">Poster</h4>
+          <p class="text description">2021</p> -->
+        </div>
+  
+        <!-- Info 2 -->
+        <div class="info next--info">
+          <!-- <h1 class="text name">Machu Pichu</h1>
+          <h4 class="text location">Peru</h4>
+          <p class="text description">Adventure is never far away</p> -->
+        </div>
+  
+        <!-- Info 3 -->
+        <div class="info previous--info">
+          <!-- <h1 class="text name">Chamonix</h1>
+          <h4 class="text location">France</h4>
+          <p class="text description">Let your dreams come true</p> -->
+        </div>
+      </div>
+    </div>
+  
+    <!-- Background Images -->
+    <div class="app__bg">
+      <div class="app__bg__image current--image">
+        <img src="assets/poster-entrep.png" alt="" />
+      </div>
+      <div class="app__bg__image next--image">
+        <img src="assets/algebra-infog.png" alt="" />
+      </div>
+      <div class="app__bg__image previous--image">
+        <img src="assets/HFA-Poster.jpg" alt="" />
+      </div>
+    </div>
+  
+    <div class="text-view-projs">
+      <button class="view-projs"><a href="projects.html"> >> View More Projects</a></button>
+    </div>
+  
+  </div>
+  
+  
+  
+  <!-- SVG Icons -->
+  <svg class="icons" style="display: none;">
+    <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+      <polyline points='328 112 184 256 328 400'
+               style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+    </symbol>
+    <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+      <polyline points='184 112 328 256 184 400'
+               style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+    </symbol>
+  </svg>
+  
+  <!-- JavaScript Libraries -->
+  <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script>
+  
+</div>
+
 <footer>
     <p>&copy; 2024 Portfolio</p>
 </footer>
     
 <!--CONTENT END-->
     <script type="text/javascript" src="js/nav.js"></script>
-
+    <script type="text/javascript" src="js/fade.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

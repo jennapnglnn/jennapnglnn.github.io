@@ -19,7 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90.5vh;
+    height:100vh;
 }
 .form-container {
     display: flex;
@@ -27,8 +27,6 @@
     align-items: center;
     width: 80%;
     max-width: 800px;
-    /* border: 1px solid #ccc;
-    border-radius: 5px; */
     padding: 100px;
     background-color: #131313;
 }   
@@ -51,7 +49,6 @@ textarea {
     border-radius: 5px;
     box-sizing: border-box;
     font-family: tommy;
-    /* margin: 30px 0; */
 }
 textarea {
     height: 150px;
@@ -80,4 +77,55 @@ textarea {
 .contact-align {
     text-align: left;
     margin-top: 50px;
+}
+
+/* IPAD */
+@media screen and (max-width: 1024px){
+     p {
+        font-size: 15px;
+     }
+
+    .title-contact {
+        font-size: 35px;
+    }
+
+    .container {
+        margin-top: 50px;
+        display: relative;
+        height:90vh;
+    }
+
+    .form-container {
+        display: block;
+        max-width: 500px;
+        padding: 55px;
+    }   
+    
+    .form-container .left-side {
+        margin-right: 0;
+    }
+
+    .form-container .right-side {
+        margin: 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+    }
+
+    textarea {
+        height: 120px;
+    }
+
+    .contact-icon {
+        width: 25px;
+        height: 25px;
+      }
+    
+    .contact-align {
+        text-align: center;
+        margin: 27px auto;
+    }
 }

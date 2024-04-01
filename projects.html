@@ -36,11 +36,12 @@
 
 <!--CONTENT START-->
 
-<div class="portfolio">
-  <h1>PORTFOLIO</h1>
-  <p class="short-descrip">These are my previous projects.</p>
+<div id="particles-js">
+  <div class="portfolio fade-in-up-together">
+    <h1>Portfolio</h1>
+    <p class="short-descrip">These are my previous projects.</p>
+  </div>
 </div>
-
 
 <div class="section-padding" id="posters"></div>
 <h2 class="categories">Posters</h2>
@@ -53,7 +54,7 @@
       <h2>Entrepreneur Poster</h2>
       <p>This poster was created in 2021, and it is my project for marketing in 
         entrepreneurship. My partner, Donille Ann Tolentino, created the content, 
-        and I designed the layout of the poster. Moreover, I used a DSLR camera 
+        and I designed the layout and logo of the poster. Moreover, I used a DSLR camera 
         and edited it in Adobe Photoshop.</p>
     </div>
   </div>
@@ -95,12 +96,23 @@
   </div>
 </div>
 
+<div class="container-web">
+  <img class="image-wide" src="assets/socpol-proj.png" alt="infog-socpol">
+    <div class="description-web">
+      <h2>Locsin Contributions</h2>
+      <p>This was a requirement for my SOCPOL (Understanding Culture, Society, 
+        and Politics) subject. On this project, I created an infographic about 
+        Locsin’s contribution. I am partnering with Donille Tolentino on this 
+        project.</p>
+    </div>
+  </div>
+
 <hr>
 
 <div class="section-padding" id="web-design"></div>
 <h2 class="categories">Website Designs</h2>
 <div class="container-web">
-    <img class="image-web" src="assets/gocomix-UI.png" alt="infog-algebra">
+    <img class="image-web" src="assets/gocomix-UI.png" alt="infog-gocomix">
     <div class="description-web">
       <h2>GoComix Website</h2>
       <p>On this website, I designed the layout for the photo header of the 
@@ -138,6 +150,28 @@
 
 <!--CONTENT END-->
     <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/fade.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      var count_particles, stats, update;
+      stats = new Stats;
+      stats.setMode(0);
+      stats.domElement.style.position = 'absolute';
+      stats.domElement.style.left = '0px';
+      stats.domElement.style.top = '0px';
+      document.body.appendChild(stats.domElement);
+      count_particles = document.querySelector('.js-count-particles');
+      update = function() {
+        stats.begin();
+        stats.end();
+        if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+          count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+        }
+        requestAnimationFrame(update);
+      };
+      requestAnimationFrame(update);
+    </script>
 
 </body>
 </html>
