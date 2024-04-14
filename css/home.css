@@ -12,7 +12,7 @@ hr {
     margin: 0 8%;
 }
 
-.title-exp {
+.title-exp, .title-projs-phone {
     text-align: center;
     font-family: horizon;
     font-size: 40px;
@@ -20,7 +20,7 @@ hr {
     text-shadow: 0 0 30px rgba(255, 34, 145, 0.8); 
 }
 
-.title-projs {
+.title-projs, .title-projs-phone {
     white-space: nowrap;
     position: absolute;
     top: 50px;
@@ -33,11 +33,18 @@ hr {
     z-index: 2; 
 }
 
+.title-projs-phone {
+    display: none;
+}
+
 .text-projs {
     position: relative; 
     z-index: 2; 
 }
 
+.header-phone {
+    display: none;
+}
 
 .view-projs {
     white-space: nowrap;
@@ -66,7 +73,10 @@ hr {
     position: absolute;
 }
 
-
+.bg-square {
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 10px;
+}
 
 /* Features of Exp */
 .feature-exp {
@@ -124,10 +134,21 @@ hr {
     margin: -10px 0;
 }
 
-@media screen and (max-width: 1700px) {
-    
+/* IPAD AIR */
+  @media screen and (max-width: 820px) {
+
+    .bg-square {
+        padding: 7px;
+        width: 23px;
+        height: 23px;
+    }
+
     .feature-exp {
-        margin-top: 90px;
+        margin-top: 70px;
+    }
+    
+    .title-exp, .title-projs{
+        font-size: 33px;
     }
 
     .container {
@@ -162,52 +183,45 @@ hr {
     .column2 p, .c3-r1 p, .c3-r2 p {
         font-size: 15px;
     }
+
 }
 
-.slider-container {
-    position: relative;
-    width: 50%;
-    margin: 0 auto;
-    overflow: hidden;
-    text-align: center;
-  }
-  
-  .slider {
-    display: flex;
-    transition: transform 0.5s ease;
-    margin-bottom: 90px;
-  }
-  
-  .slide {
-    flex: 0 0 100%;
-    margin: auto 0;
-  }
-  
-  .slide img {
-    width: 50%;
-    height: auto;
-  }
-  
-  .prev,
-  .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 34, 145);
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 20px;
-    z-index: 1;
-  }
-  
-  .prev {
-    left: 15%;
-    color: #ffffff
-  }
-  
-  .next {
-    right: 15%;
-    color: #ffffff
-  }
+@media screen and (max-width:430px) {
+    .bg-square {
+        background-color: transparent;
+    }
+
+    .container {
+        display: block;
+      }
+
+      .title-exp, .title-projs {
+        font-size: 26px;
+      }
+
+    .column1, .column2, .column3 {
+        margin: 0;
+    }
+
+    .title-projs {
+        display: none;
+    }
+
+    .title-projs-phone {
+        display: flex;
+        font-size: 26px;
+    }
+
+    .app {
+        overflow-x: hidden;
+    }
+
+    .header-web {
+        display: none;
+    }
+
+    .header-phone {
+        display: block;
+    }
+
+}

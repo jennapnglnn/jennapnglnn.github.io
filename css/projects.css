@@ -63,13 +63,16 @@ hr {
   max-width: 800px;
   margin: 90px auto;
   overflow: hidden;
-  
 }
 
-.column {
+.column, .column-web {
   float: left;
   width: 50%;
   flex: 1;
+}
+
+.column-phone {
+  display: none;
 }
 
 .image-wide {
@@ -133,10 +136,84 @@ video {
   text-align: justify;
 }
 
-/* IPAD */
+/* IPAD PRO*/
 @media screen and (max-width: 1024px){
   .portfolio h1 {
     font-size: 75px;
   }
 
+}
+
+/* IPAD AIR */
+@media screen and (max-width: 820px) {
+  .portfolio h1 {
+    font-size: 60px;
+  }
+
+  .container {
+    max-width: 600px;
+  }
+  
+  .container-web {
+    max-width: 600px;
+    margin: 90px auto;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 430px){
+  .portfolio h1 {
+    font-size: 30px;
+  }
+
+  .short-descrip {
+    font-size: 12px;
+  }
+
+  .description {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .description-left {
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  .container {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .column {
+    float: none;
+    display: block;
+  }
+
+  .column-phone {
+    display: flex;
+    max-width: 300px;
+  }
+
+  .column-web {
+    display: none;
+  }
+
+  
+  .container-web {
+    max-width: 350px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .container-web {
+    margin-bottom: 50px;
+  }
+
+  #particles-js{
+    margin-top: 100px;
+  }
 }

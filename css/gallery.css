@@ -256,7 +256,7 @@
     display: none;
   }
   
-  @media only screen and (min-width: 800px) {
+  @media only screen and (min-width: 820px) {
     :root {
       --card-width: 250px;
       --card-height: 400px;
@@ -278,4 +278,44 @@
   }
   .support a:hover {
     transform: scale(1.1);
+  }
+
+  /* PHONE */
+  @media only screen and (max-width: 430px){
+    :root {
+      --card-width: 150px;
+      --card-height: 250px;
+    }
+  
+    .support {
+      right: 5px;
+      bottom: 5px;
+      padding: 5px;
+      display: flex;
+      justify-content: space-between; /* Adjusting arrows closer */
+      align-items: center;
+    }
+  
+    .support a {
+      font-size: 1.5rem;
+    }
+  
+    .cardList__btn {
+      --btn-size: 30px; /* Adjust the size of the button */
+      width: var(--btn-size);
+      height: var(--btn-size);
+      position: relative; /* Change from absolute to relative */
+      z-index: 100; /* Ensure it's on top of other elements */
+    }
+  
+    .cardList__btn.btn--left {
+      /* Adjust the distance from the left edge */
+      left: 30px; /* Add margin instead of left property */
+      top: 35px;
+    }
+  
+    .cardList__btn.btn--right {
+      /* Adjust the distance from the right edge */
+      left: 400px; /* Add margin instead of right property */
+    }
   }
