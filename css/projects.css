@@ -133,4 +133,10 @@ video {
   text-align: justify;
 }
 
+/* IPAD */
+@media screen and (max-width: 1024px){
+  .portfolio h1 {
+    font-size: 75px;
+  }
 
+}

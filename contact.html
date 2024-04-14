@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="icon" href="assets/Logo-icon-web.png" type="images/x-icon"/>
-    <title>JEPP Portfolio - About</title>
+    <title>JEPP Portfolio - Contact</title>
 </head>
 <body>
 <!--NAVBAR START-->
@@ -15,11 +15,11 @@
         <div class="logo">
             <img src="assets/logo-business.png" class="logo-size" alt="Logo">
         </div>
-        <div class="navbar-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
+        <div class="navbar-links" id="navbar-links">
+            <a href="index.html" class="align-nav">Home</a>
+            <a href="about.html" class="align-nav">About</a>
             <div class="dropdown">
-                <a href="projects.html" class="dropbtn">Projects<span class="arrow">&#9660;</span> <!-- Arrow icon --></a>
+                <a href="projects.html" class="dropbtn align-nav">Projects<span class="arrow">&#9660;</span></a>
                 <div class="dropdown-content">
                     <a href="projects.html#posters">Posters</a>
                     <a href="projects.html#infographics">Infographics</a>
@@ -27,10 +27,14 @@
                     <a href="projects.html#vid-edit">Video Editing</a>
                 </div>
             </div>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="align-nav">Contact</a>
         </div>
     </div>
-  </div>
+    <div class="menu-icon" id="menu-icon">
+        <img src="assets/menu.png" alt="Menu" width="30">
+    </div>
+</div>
+
 <!--NAVBAR END-->
 
 <!--CONTENT START-->
@@ -67,6 +71,7 @@
     
 <!--CONTENT END-->
     <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/nav-phone.js"></script>
 
 </body>
 </html>

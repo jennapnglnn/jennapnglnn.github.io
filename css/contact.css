@@ -129,3 +129,8 @@ textarea {
         margin: 27px auto;
     }
 }
+
+/* PHONE */
+@media screen and (max-width: 430px){
+    
+}
