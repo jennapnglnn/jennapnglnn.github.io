@@ -10,9 +10,9 @@
 }
 
 
-body, html {
-    overflow-y: hidden;
-}
+::-webkit-scrollbar {
+    display: none;
+  }
 
 /* Styles for button-container */
 .button-container {
@@ -59,33 +59,32 @@ body, html {
     left: 105px;
     top: auto;
     bottom: 0;
-    width: 150px; /* Adjust width as needed */
-    /* Add any other styling you need */
+    width: 150px;
 }
 
 .skill-container {
     display: flex;
     align-items: center;
     /* justify-content: flex-start; */
-    flex-direction: column; /* Arrange skills in a column */
-    padding: 20px; /* Add padding as needed */
+    flex-direction: column; 
+    padding: 20px;
     
 }
 
 .skill-container .skill {
     position: relative;
-    margin-bottom: 20px; /* Adjust margin as needed */
+    margin-bottom: 20px; 
     font-size: 13px;
 }
 
 .skill-container .skill .outer {
     height: 80px;
     width: 80px;
-    border-radius: 50%; /* Adjust the percentage for smoother outer edges */
+    border-radius: 50%; 
     padding: 20px;
     box-shadow: 6px 6px 10px -1px rgba(0 0 0 /.15);
-    transition: background 0.5s ease-in-out; /* Smooth background transition */
-    overflow: hidden; /* Ensure inner circle doesn't protrude */
+    transition: background 0.5s ease-in-out; 
+    overflow: hidden;
 }
 
 .skill-container .skill .outer .inner {
@@ -96,18 +95,18 @@ body, html {
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    border: 5px solid transparent; /* Add transparent border for smoother edges */
+    border: 5px solid transparent;
 }
 
 .skill-container .skill .outer .inner .number {
     font-weight: 800;
     color: black;
-    transition: color 0.5s ease-in-out; /* Smooth color transition */
+    transition: color 0.5s ease-in-out; 
     text-align: center;
 }
 
 .image-container {
-    flex: 1; /* Take remaining space */
+    flex: 1; 
     position: relative;
 }
 
@@ -119,8 +118,8 @@ body, html {
 }
 
 .obj-content {
-    max-width: 600px; /* Adjust maximum width as needed */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Example box shadow */
+    max-width: 600px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .objective, .exp-title {
@@ -156,22 +155,259 @@ body, html {
     transform: scale(1.4);
 }
 
-/* @media screen and (max-width: 1024px) {
+.bg-ipad-about {
+    display: none;
+}
+
+.about-header-ipad {
+    display: none;
+}
+
+
+/* IPAD PRO */
+@media screen and (max-width: 1024px) {
 
     .about-header {
+        display: none;
+    }
+
+    .image-container{
+        display: none;
+    }
+
+    .about-header-ipad {
+        display: block;
+        background-image: url('/assets/about-header-ipad.png'); /* Path to your background image */
+        background-size: cover; /* Cover the entire element with the background image */
+        background-position: center; /* Center the background image */
+        width: 100%;
+        height: 100vh;
+    }
+
+    .bg-ipad-about {
+        display: block;
+        position: relative;
+        z-index: -1;
+    }
+
+    .bg-web, .bg-phone {
+        display: none;
+    }
+
+
+    .skills-content-ipad {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+    }
+    
+    .skills-title-ipad {
+        text-align: center;
+        font-family: horizon;
+        font-size: 35px;
+        color: #ffffff;
+        text-shadow: 0 0 30px rgba(255, 34, 145, 0.8);
+        margin-bottom: 20px;
+        margin-top: 120px; /* Adjust margin-top to control distance from top */
+        margin-left: 530px;
+    }
+    
+    .skill-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start; /* Align items at the top of the container */
+        margin-top: 0; /* Add margin between title and skill containers */
+    }
+    
+    .skill-container-ipad-1,
+    .skill-container-ipad-2 {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        top: 180px; /* Adjust position from top */
+        right: 20px; /* Adjust margin between skill containers */
+        /* ^--- Adjust this value to move the containers further to the right */
+    }
+    
+    .skill-container-ipad-1 {
+        margin-right: 240px;
+    }
+    
+    .skill-container-ipad-2 {
+        margin-right: 60px;
+    }
+    
+    .skill-container-ipad-1 .skill,
+    .skill-container-ipad-2 .skill {
+        position: relative;
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+    
+    .skill-container-ipad-1 .skill .outer,
+    .skill-container-ipad-2 .skill .outer {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%; /* Adjust the percentage for smoother outer edges */
+        padding: 20px;
+        box-shadow: 6px 6px 10px -1px rgba(0 0 0 /.15);
+        transition: background 0.5s ease-in-out; /* Smooth background transition */
+        overflow: hidden; /* Ensure inner circle doesn't protrude */
+    }
+    
+    .skill-container-ipad-1 .skill .outer .inner,
+    .skill-container-ipad-2 .skill .outer .inner {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        border: 5px solid transparent; /* Add transparent border for smoother edges */
+    }
+    
+    .skill-container-ipad-1 .skill .outer .inner .number,
+    .skill-container-ipad-2 .skill .outer .inner .number {
+        font-weight: 800;
+        color: black;
+        transition: color 0.5s ease-in-out; /* Smooth color transition */
+        text-align: center;
+    }
+    
+    
+     .text-container {
+        position: flex; /* Position relative to enable vertical alignment */
+        top: 630px;
+    }
+
+    .text-container h2{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .obj-content {
+        margin: 0 auto;
+        max-width: 840px;
+    }
+
+    .obj-text{
+        font-size: 18px;
+        width: 100%;
+        z-index: 1;
+    }
+
+   /* Remove animation from .experience images */
+    .experience img {
+        animation: none; /* Remove any existing animation */
+    }
+
+    /* Add styles to center the images */
+    .experience {
+        display: flex;
+        justify-content: center; /* Center the images horizontally */
+        align-items: center; /* Center the images vertically */
+        margin: 0 auto;
+    }
+
+    /* Add margin between images if needed */
+    .image-exp {
+        margin: 30px; /* Adjust as needed */
+    }
+}
+
+/* PHONE */
+@media screen and (max-width: 430px) {
+    .about-header-ipad, .image-container-ipad {
         display: block;
     }
 
-    .skills-content-ipad{
+    .about-header, .image-container {
+        display: none;
+    }
+
+    .about-header-ipad {
+        background-image: url('/assets/about-header-phone.png');
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+    }
+
+    .navbar{
         display: flex;
+        animation: none; /* Remove animation from the navbar */
     }
 
-    .web-pc {
+    .navbar-links {
         display: none;
+    }   
+
+    .skills-content-ipad {
+        display: block;
+
     }
 
-    .skills-content-web {
-        display: none;
+    .skills-title-ipad {
+        text-align: center; /* Center-align the skills title */
+        font-family: horizon;
+        font-size: 30px;
+        color: #ffffff; /* Ensure proper visibility */
+        text-shadow: 0 0 30px rgba(255, 34, 145, 0.8); /* Optional: Add text shadow for better visibility */
+        margin-top: 500px; /* Add some top margin for better spacing */
+        margin-left: 0;
     }
     
-} */
+
+
+    .skill-container-ipad-1,
+    .skill-container-ipad-2 {
+        align-items: center;
+        text-align: center;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        top: 60px; /* Adjust position from top */
+    }
+    
+    .skill-container-ipad-1 {
+        margin-right: 200px;
+
+    }
+    
+    .skill-container-ipad-2 {
+        margin-right: 40px;
+    }
+    
+    .text-container {
+        text-align: center; /* Center-align the text content */
+        max-width: 300px;
+    }
+
+    .obj-content {
+        font-size: 20px;
+        width: 120%; /* Extend the text to span the full width */
+        overflow: hidden; /* Prevent overflow */
+        margin-top: 400px;
+        margin-left: 0px;
+    }
+
+    .objective, .exp-title {
+        font-family: horizon;
+        font-size: 30px;
+    }
+
+    .experience {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .image-exp {
+        margin: 25px auto; /* Center-align the images */
+    }
+}
