@@ -163,6 +163,24 @@
     display: none;
 }
 
+.bg-laptop {
+    display: none;
+}
+
+@media screen and (max-width: 1440px) {
+    .bg-web {
+        display: none;
+    }
+    
+    .bg-laptop {
+        display: block;
+    }
+
+    .skills-content {
+        width: 130px;
+    }
+}
+
 
 /* IPAD PRO */
 @media screen and (max-width: 1024px) {
@@ -318,6 +336,25 @@
     /* Add margin between images if needed */
     .image-exp {
         margin: 30px; /* Adjust as needed */
+    }
+}
+
+/* IPAD AIR */
+@media screen and (max-width: 820px) {
+
+    .skills-title-ipad {
+        margin-left: 410px;
+    }
+    .skill-container-ipad-1 {
+        margin-right: 190px;
+    }
+    
+    .skill-container-ipad-2 {
+        margin-right: 30px;
+    }
+
+    .obj-content {
+        max-width: 630px;
     }
 }
 
