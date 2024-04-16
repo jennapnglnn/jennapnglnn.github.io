@@ -193,6 +193,7 @@ hr {
 
     .container {
         display: block;
+        animation: none;
       }
 
       .title-exp, .title-projs {
