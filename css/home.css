@@ -199,18 +199,6 @@ hr {
     .container {
         display: block;
         animation: none;
-        /* Ensure the container has sufficient width and height */
-        width: 100%;
-        height: auto;
-        /* Add padding and margin for spacing */
-        padding: 20px;
-        margin-top: 20px;
-        /* Set background color and border for visibility */
-        background-color: #f0f0f0;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        /* Add overflow properties if needed */
-        overflow: auto;
     }
 
       .title-exp, .title-projs {
