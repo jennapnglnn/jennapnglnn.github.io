@@ -192,6 +192,10 @@ hr {
         background-color: transparent;
     }
 
+    .feature-exp {
+        display: block;
+    }
+
     .container {
         display: block;
         animation: none;
