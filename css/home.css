@@ -12,7 +12,7 @@ hr {
     margin: 0 8%;
 }
 
-.title-exp, .title-projs-phone {
+.title-exp, .title-projs-phone, .testimonials {
     text-align: center;
     font-family: horizon;
     font-size: 40px;
@@ -77,6 +77,44 @@ hr {
     background-color: rgb(0, 0, 0, 0.5);
     padding: 10px;
 }
+
+/* TESTIMONIALS */
+
+.services {
+    margin: 70px auto;
+}
+
+ .services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 2fr));
+    gap:2rem;
+ }
+ 
+ .services .box-container .box{
+    text-align: center;
+    padding:2rem;
+    background-color: rgb(0, 0, 0, 0.2);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+ }
+
+ 
+ .services .box-container .box h3{
+    font-size: 30px;
+    color:#ff2291;
+ }
+ 
+ .services .box-container .box p{
+    text-align: justify;
+    font-size: 15px;
+    line-height: 2;
+ }
+
+ .title-person {
+    text-align: center;
+    font-style: italic;
+ }
+  
 
 /* Features of Exp */
 .feature-exp {
@@ -201,7 +239,7 @@ hr {
         animation: none;
     }
 
-      .title-exp, .title-projs {
+      .title-exp, .title-projs, .testimonials {
         font-size: 26px;
       }
 
