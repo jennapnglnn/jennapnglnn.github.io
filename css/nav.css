@@ -300,6 +300,11 @@ footer {
     height: 30px;
   }
 
+  .popup-overlay {
+    background: rgba(0, 0, 0, 0.979); 
+    backdrop-filter: none; 
+  }
+
 }
 
 
