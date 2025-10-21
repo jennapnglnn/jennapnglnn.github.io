@@ -60,7 +60,7 @@ hr {
 }
 
 .container-web {
-  max-width: 1000px;
+  max-width: fit-content;
   margin: 90px auto;
   overflow: hidden;
 }
@@ -81,7 +81,11 @@ hr {
 }
 
 .container-web img {
-  height: 500px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: auto;
+  width: 50%;
 }
 
 .image {
@@ -158,6 +162,10 @@ video {
     font-size: 75px;
   }
 
+  .container-web img {
+    width: 80%;
+  }
+
 }
 
 /* IPAD AIR */
@@ -174,6 +182,10 @@ video {
     max-width: 600px;
     margin: 90px auto;
     overflow: hidden;
+  }
+
+  .container-web img {
+    width: 95%;
   }
 }
 
